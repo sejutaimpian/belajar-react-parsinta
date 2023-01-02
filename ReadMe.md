@@ -66,7 +66,7 @@ npm i
 npm run dev
 ```
 
-<p style="text-align:right"><a href="#catatanrangkumanku-saat-belajar">Go 🔝</a></p>
+<p align="right"><a href="#catatanrangkumanku-saat-belajar">Go 🔝</a></p>
 
 ## 2. Kita Butuh Prettier
 
@@ -90,7 +90,7 @@ npm run dev
 - File .prettierrc.json berguna untuk meminimalisir conflict pada kerja tim (github) karena perbedaan format
 - Daripada menjalankan command format secara terus-menerus, lebih baik gunakan fitur `format on save`. Caranya install plugin prettier pada vscode, pergi ke preferece, search format on save, lalu check (enable).
 
-<p style="text-align:right"><a href="#catatanrangkumanku-saat-belajar">Go 🔝</a></p>
+<p align="right"><a href="#catatanrangkumanku-saat-belajar">Go 🔝</a></p>
 
 ## 3. Kita Butuh Desain
 
@@ -129,7 +129,7 @@ content: [
 - restart npm run dev
 - Coding pada App.jsx untuk test Tailwind
 
-<p style="text-align:right"><a href="#catatanrangkumanku-saat-belajar">Go 🔝</a></p>
+<p align="right"><a href="#catatanrangkumanku-saat-belajar">Go 🔝</a></p>
 
 ## 4. React Components
 
@@ -139,7 +139,7 @@ content: [
 
 - Permasalahan-permasalahan jika tanpa component yaitu, HTML memang mempunyai component seperti button, tapi itu hanya bawaan dan tidak memiliki style apapun. Jika suatu hari nanti kita memberikan style pada button, lalu membutuhkannya kembali, maka kita harus membuat button baru lalu memberikan style lagi (redudansi)
 
-<p style="text-align:right"><a href="#catatanrangkumanku-saat-belajar">Go 🔝</a></p>
+<p align="right"><a href="#catatanrangkumanku-saat-belajar">Go 🔝</a></p>
 
 ### Component fix/absolute data.
 
@@ -157,7 +157,7 @@ Cara memanggilnya: `<Button />` atau `<Button></Button>`
 
 Muncul permasalahan: Bagaimana jika textnya ingin dijadikan relative?
 
-<p style="text-align:right"><a href="#catatanrangkumanku-saat-belajar">Go 🔝</a></p>
+<p align="right"><a href="#catatanrangkumanku-saat-belajar">Go 🔝</a></p>
 
 ### Component relative data dengan props
 
@@ -177,7 +177,7 @@ Cara memanggilnya: `<Button text='Register' />`
 
 Muncul permasalahan: Bagaimana jika isi text ingin ditambahkan component lain?
 
-<p style="text-align:right"><a href="#catatanrangkumanku-saat-belajar">Go 🔝</a></p>
+<p align="right"><a href="#catatanrangkumanku-saat-belajar">Go 🔝</a></p>
 
 ### Component relative data dengan children
 
@@ -210,7 +210,7 @@ Cara memanggilnya:
 
 Muncul permasalahan: Bagaimana jika ingin menggunakan kedua cara diatas secara bersamaan, yaitu props.text dan props children?
 
-<p style="text-align:right"><a href="#catatanrangkumanku-saat-belajar">Go 🔝</a></p>
+<p align="right"><a href="#catatanrangkumanku-saat-belajar">Go 🔝</a></p>
 
 ### Component relative data dengan pengkondisian props.text dan props.children
 
@@ -230,7 +230,7 @@ Cara memanggilnya seperti 2 component sebelumnya.
 
 Muncul permasalahan: jika kita ingin memberikan style kepada icon, maka kita akan mengulang (redudansi) styling setiap kali menambahkan icon baru
 
-<p style="text-align:right"><a href="#catatanrangkumanku-saat-belajar">Go 🔝</a></p>
+<p align="right"><a href="#catatanrangkumanku-saat-belajar">Go 🔝</a></p>
 
 ### [Tailwind Arbitrary Variant](https://tailwindcss.com/docs/hover-focus-and-other-states#using-arbitrary-variants) untuk children svg/icon
 
@@ -240,7 +240,7 @@ Muncul permasalahan: jika kita ingin memberikan style kepada icon, maka kita aka
 
 Muncul permasalahan: button defaultnya memiliki property type, onchange, dsb. Bagaimana cara menambahkannya ke component?
 
-<p style="text-align:right"><a href="#catatanrangkumanku-saat-belajar">Go 🔝</a></p>
+<p align="right"><a href="#catatanrangkumanku-saat-belajar">Go 🔝</a></p>
 
 ### Menambahkan 1 property type pada component Button
 
@@ -282,7 +282,7 @@ Cara memanggilnya:
 
 Muncul permasalahan: bagaimana jika kita ingin menambahkan property yang lain? tidak elok jika harus ditambahkan satu-satu.
 
-<p style="text-align:right"><a href="#catatanrangkumanku-saat-belajar">Go 🔝</a></p>
+<p align="right"><a href="#catatanrangkumanku-saat-belajar">Go 🔝</a></p>
 
 ### Menambahkan banyak propert dengan [Spread Syntax](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax)
 
@@ -315,7 +315,7 @@ Cara memanggilnya:
 
 Muncul permasalahan: bagaimana jika kita ingin menambahkan style yang berbeda pada component?
 
-<p style="text-align:right"><a href="#catatanrangkumanku-saat-belajar">Go 🔝</a></p>
+<p align="right"><a href="#catatanrangkumanku-saat-belajar">Go 🔝</a></p>
 
 ### Component dengan props className
 
@@ -338,7 +338,7 @@ function Button(props) {
 
 Muncul permasalahan: bagaimana jika kita ingin memberikan style default?
 
-<p style="text-align:right"><a href="#catatanrangkumanku-saat-belajar">Go 🔝</a></p>
+<p align="right"><a href="#catatanrangkumanku-saat-belajar">Go 🔝</a></p>
 
 ### Component dengan props className default
 
@@ -359,7 +359,7 @@ function Button(props) {
 }
 ```
 
-<p style="text-align:right"><a href="#catatanrangkumanku-saat-belajar">Go 🔝</a></p>
+<p align="right"><a href="#catatanrangkumanku-saat-belajar">Go 🔝</a></p>
 
 ### CLSX
 
@@ -378,7 +378,7 @@ className={clsx(
 )}
 ```
 
-<p style="text-align:right"><a href="#catatanrangkumanku-saat-belajar">Go 🔝</a></p>
+<p align="right"><a href="#catatanrangkumanku-saat-belajar">Go 🔝</a></p>
 
 ### Memanggil props tidak dengan attribute
 
@@ -407,7 +407,7 @@ const onClick = () => console.log('Github Clicked')
 </Button>
 ```
 
-<p style="text-align:right"><a href="#catatanrangkumanku-saat-belajar">Go 🔝</a></p>
+<p align="right"><a href="#catatanrangkumanku-saat-belajar">Go 🔝</a></p>
 
 ### Menambahkan type default overridingable
 
@@ -415,4 +415,4 @@ const onClick = () => console.log('Github Clicked')
 1. Tambahkan property type={type} pada tag button yang ada di compenent Button
 1. Property type bisa dioverride pada property component Button
 
-<p style="text-align:right"><a href="#catatanrangkumanku-saat-belajar">Go 🔝</a></p>
+<p align="right"><a href="#catatanrangkumanku-saat-belajar">Go 🔝</a></p>
