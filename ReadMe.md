@@ -83,6 +83,9 @@
           <li>
               <a href="#inline-destructuring-props">Inline destructuring props</a>
           </li>
+          <li>
+              <a href="#membuat-component-memiliki-banyak-component">Membuat component memiliki banyak component</a>
+          </li>
         </ul>
     </li>    
   </ol>
@@ -707,3 +710,5 @@ export default Card
   </Card.Footer>
 </Card>
 ```
+
+<p align="right"><a href="#catatanrangkumanku-saat-belajar">Go 🔝</a></p>
