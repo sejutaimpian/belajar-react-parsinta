@@ -1,44 +1,33 @@
-import {
-  IconBrandFacebook,
-  IconBrandGithub,
-  IconBrandTwitter,
-} from '@tabler/icons'
-import clsx from 'clsx'
+import Card from './Components/Card'
+import Button from './Components/Button'
 
 export default function App() {
-  const type = 'submit'
-  const onClick = () => console.log('Github Clicked')
   return (
-    <div className='bg-slate-900 grid place-content-center min-h-screen'>
-      <div className='flex gap-x-2'>
-        <Button {...{ type, onClick }}>
-          <IconBrandGithub />
-          Register
-        </Button>
-        <Button type='submit' onClick={() => console.log('Register')}>
-          <IconBrandFacebook />
-          Register
-        </Button>
-        <Button className='bg-pink-600' onClick={() => console.log('Login')}>
-          <IconBrandTwitter />
-          Login
-        </Button>
+    <div className='bg-slate-100 text-slate-800 tracking-tighter antialiased flex items-center justify-center min-h-screen'>
+      <div className='max-w-4xl w-full flex items-center flex-col md:flex-row gap-4'>
+        <Card>
+          <Card.Title>Hello React</Card.Title>
+          <Card.Body>
+            Lorem Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            Fugiat, dicta. Lorem ipsum dolor sit, amet consectetur adipisicing
+            elit. Aut, aperiam?
+          </Card.Body>
+          <Card.Footer>
+            <Button>Register</Button>
+          </Card.Footer>
+        </Card>
+        <Card>
+          <Card.Title>Hello React</Card.Title>
+          <Card.Body>
+            Lorem Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            Fugiat, dicta. Lorem ipsum dolor sit, amet consectetur adipisicing
+            elit. Aut, aperiam?
+          </Card.Body>
+          <Card.Footer>
+            <Button>Register</Button>
+          </Card.Footer>
+        </Card>
       </div>
     </div>
-  )
-}
-function Button(props) {
-  const { className = 'bg-blue-600', children, text, type = 'submit' } = props
-  return (
-    <button
-      {...props}
-      type={type}
-      className={clsx(
-        className,
-        '[&>svg]:w-5 [&>svg]:h-5 [&>svg]:stroke-1 flex items-center gap-x-2 text-white px-4 py-2 rounded'
-      )}
-    >
-      {text || children}
-    </button>
   )
 }
