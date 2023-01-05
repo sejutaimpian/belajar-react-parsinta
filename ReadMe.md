@@ -87,6 +87,9 @@
               <a href="#membuat-component-memiliki-banyak-component">Membuat component memiliki banyak component</a>
           </li>
         </ul>
+    </li>
+    <li>
+        <a href="#5-usestate">useState</a>
     </li>    
   </ol>
 </details>
@@ -710,5 +713,64 @@ export default Card
   </Card.Footer>
 </Card>
 ```
+
+<p align="right"><a href="#catatanrangkumanku-saat-belajar">Go 🔝</a></p>
+
+## 6. useState
+
+- useState hadir untuk HMR, yaitu perubahan langsung/live pada browser. Penggunaan let apalagi const tidak memengaruhi HMR.
+
+```
+export default function App() {
+  const [name, setName] = useState('Default')
+  function handleClick() {
+    setName('Eris')
+  }
+  return (
+    <PlaceContentCenter>
+      <div>{name}</div>
+      <Button onClick={handleClick}>Change Name</Button>
+    </PlaceContentCenter>
+  )
+}
+```
+
+- Variable pada useState tertinggal satu langkah setelah melakukan setState. Cara mengakalinya adalaha dengan cara membuat variable baru berawalan next, seperti nextName
+
+```
+function handleClick() {
+  const nextName = 'Eris'
+  setName(nextName)
+}
+```
+
+- Ketika ingin menggunakan function, jangan tambahkan () agar function tersebut tidak langsung/otomatis dipanggil di awal
+- Pemanggilan setState tidak bisa dilakukan berulang dalam satu waktu, karna yang terjadi hanya akan menjalankan handle secara sekali. Untuk mengakali hal tersebut, dapat menggunakan `updater`. variable prevState dapat diganti dengan apapun.
+
+```
+export default function App() {
+  const [count, setCount] = useState(0)
+  function handleClick() {
+    // setCount(count + 1)
+    setCount((prevCount) => prevCount + 1)
+  }
+  return (
+    <PlaceContentCenter>
+      <div>{count}</div>
+      <Button onClick={handleClick}>+1</Button>
+      <Button
+        onClick={() => {
+          handleClick()
+          handleClick()
+          handleClick()
+        }}>
+        +3
+      </Button>
+    </PlaceContentCenter>
+  )
+}
+```
+
+- Ketika memanggil function didalam arrow function, pastikan untuk menambahkan ()
 
 <p align="right"><a href="#catatanrangkumanku-saat-belajar">Go 🔝</a></p>
