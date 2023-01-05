@@ -89,7 +89,10 @@
         </ul>
     </li>
     <li>
-        <a href="#5-usestate">useState</a>
+        <a href="#6-usestate">useState</a>
+    </li>    
+    <li>
+        <a href="#7-ekstrack-ke-dalam-komponen">Ekstrack ke dalam komponen</a>
     </li>    
   </ol>
 </details>
@@ -772,5 +775,14 @@ export default function App() {
 ```
 
 - Ketika memanggil function didalam arrow function, pastikan untuk menambahkan ()
+
+<p align="right"><a href="#catatanrangkumanku-saat-belajar">Go 🔝</a></p>
+
+## 7. Ekstrack ke dalam komponen
+
+- Codingan Counter pada video sebelumnya dapat dijadikan komponen terpisah. Caranya buat file baru pada folder Components sebagaimana biasanya.
+- Kadangkala komponen membutuhkan variable state yang terdapat pada komponen lainnya atau ingin mengirim data. Untuk mengakali hal tersebut, state dapat ditransfer melalui props. Catatan, jika state nya hanya untuk 1 komponen, sebaiknya simpan di komponen yang bersangkutan.
+- Jika props & state memiliki nama yang sama, maka bis dibongkar menjadi `<Counter {...{ count, setCount }} />`
+- Kalian juga dapat menambahkan initial props
 
 <p align="right"><a href="#catatanrangkumanku-saat-belajar">Go 🔝</a></p>
