@@ -94,6 +94,9 @@
     <li>
         <a href="#7-ekstrack-ke-dalam-komponen">Ekstrack ke dalam komponen</a>
     </li>    
+    <li>
+        <a href="#8-usestate-dengan-object">useState dengan Object</a>
+    </li>    
   </ol>
 </details>
 
@@ -784,5 +787,61 @@ export default function App() {
 - Kadangkala komponen membutuhkan variable state yang terdapat pada komponen lainnya atau ingin mengirim data. Untuk mengakali hal tersebut, state dapat ditransfer melalui props. Catatan, jika state nya hanya untuk 1 komponen, sebaiknya simpan di komponen yang bersangkutan.
 - Jika props & state memiliki nama yang sama, maka bis dibongkar menjadi `<Counter {...{ count, setCount }} />`
 - Kalian juga dapat menambahkan initial props
+
+<p align="right"><a href="#catatanrangkumanku-saat-belajar">Go 🔝</a></p>
+
+## 8. useState dengan Object
+
+- Setup
+- Install tailwindcss-forms
+
+```
+// Install
+npm install -D @tailwindcss/forms
+
+// tailwind.config.js
+module.exports = {
+  theme: {
+    // ...
+  },
+  plugins: [
+    require('@tailwindcss/forms'),
+    // ...
+  ],
+}
+```
+
+- label dan input dapat dijadikan komponen tersendiri agar stylenya seragam
+- comment pada jsx menggunakan `/* comment */`
+- Membuat state untuk name dan email seperti biasa (array) akan menjadi melelahkan jika isi formnya bertambah banyak. Solusinya adalah dengan useState Object.
+
+```
+// useState object
+const [form, setForm] = useState({
+  name: '',
+  email: '',
+})
+
+// setter object useState
+function onChange(event) {
+  setForm({ ...form, [event.target.name]: event.target.value })
+}
+
+// menampilkan
+<p>Name: {form.name || '----'}</p>
+<p>Email: {form.email || '----'}</p>
+```
+
+- Menambahkan form onSubmit
+
+```
+// form
+<form onSubmit={onSubmit}>...</form>
+// function onSubmit
+function onSubmit(event) {
+  event.preventDefault()
+  console.log(form)
+}
+```
 
 <p align="right"><a href="#catatanrangkumanku-saat-belajar">Go 🔝</a></p>

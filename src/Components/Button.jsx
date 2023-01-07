@@ -1,7 +1,7 @@
 import clsx from 'clsx'
 
 export default function Button({
-  className = 'bg-blue-600',
+  className = 'bg-black',
   children,
   text,
   type = 'submit',
