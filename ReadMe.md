@@ -97,6 +97,9 @@
     <li>
         <a href="#8-usestate-dengan-object">useState dengan Object</a>
     </li>    
+    <li>
+        <a href="#9-manipulasi-state">Manipulasi State</a>
+    </li>    
   </ol>
 </details>
 
@@ -843,5 +846,16 @@ function onSubmit(event) {
   console.log(form)
 }
 ```
+
+<p align="right"><a href="#catatanrangkumanku-saat-belajar">Go 🔝</a></p>
+
+## 9. Manipulasi State
+
+- Membuat Component Todo
+
+> Pastikan bahwa path import komponennya sudah benar.  
+> Path import komponen pada App.jsx tidak sama dengan import komponen pada komponen karena beda struktur folder. Sehingga jangan dicopas.
+
+- Manipulasi state ada 2 (berdasarkan yang diajarkan dalam video), yaitu [map()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map) untuk menambah state variable array dan [filter()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter) untuk menghapus state variable array.
 
 <p align="right"><a href="#catatanrangkumanku-saat-belajar">Go 🔝</a></p>
